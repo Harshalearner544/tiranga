@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Balance: {{ balance }}</h3>
+<form method="post">
+  <select name="choice">
+    <option value="Red">Red</option>
+    <option value="Green">Green</option>
+    <option value="Violet">Violet</option>
+  </select>
+  <input name="amount" type="number" placeholder="Bet amount" required>
+  <button>Place Bet</button>
+</form>
+<a href="/logout">Logout</a>
+{% endblock %}
